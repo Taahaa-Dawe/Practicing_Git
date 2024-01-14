@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Data Science Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #000;
+            color: #ddd;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.light-mode {
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+            position: relative;
+        }
+
+        .toggle-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px;
+        }
+
+        .toggle-switch input {
+            display: none;
+        }
+
+        .toggle-slider {
+            background-color: #ccc;
+            border-radius: 20px;
+            display: inline-block;
+            height: 20px;
+            width: 40px;
+            position: relative;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .toggle-slider:before {
+            background-color: #fff;
+            border-radius: 50%;
+            content: '';
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+  	    -webkit-transition: .4s;
+  	    transition: .4s;
+        }
+
+        .toggle-switch input:checked + .toggle-slider {
+            background-color: #57a846;
+  	   -webkit-transform: translateX(26px);
+
+        }
+
+        .toggle-switch input:checked + .toggle-slider:before {
+            -webkit-transform: translateX(20px);
+  	   -ms-transform: translateX(26px);
+ 	    transform: translateX(26px);
+        }
+
+        section {
+            margin-top: 20px;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Data Science Project Title</h1>
+    </header>
+
+    <section>
+        <h2>About the Project</h2>
+        <p>
+            Provide a brief overview of your data science project. Describe the problem statement, objectives,
+            and the context of the project. Highlight the significance and potential impact of your work.
+        </p>
+    </section>
+
+    <section>
+        <h2>Methodology</h2>
+        <p>
+            Explain the approach and methods used in your project. Discuss the data collection process, data cleaning,
+            feature engineering, and any machine learning algorithms or statistical methods applied.
+        </p>
+    </section>
+
+    <section>
+        <h2>Results</h2>
+        <p>
+            Present the key findings and results of your data analysis. Use visualizations or charts to enhance the
+            understanding of your results. Discuss any insights gained from the analysis.
+        </p>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>
+            Summarize the main outcomes of your project. Discuss the implications of your findings and suggest
+            potential areas for future work or improvements.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name - Data Science Project</p>
+    </footer>
+
+</body>
+
+</html>
