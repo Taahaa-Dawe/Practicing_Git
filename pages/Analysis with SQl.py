@@ -1,6 +1,3 @@
-pip install sqlalchemy
-pip install mysql-connector-python
-
 import streamlit as st
 from mysql.connector import * 
 
