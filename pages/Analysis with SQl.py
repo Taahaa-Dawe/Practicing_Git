@@ -1,5 +1,6 @@
-pip install sqlalchemy
 import streamlit as st
+from mysql.connector import * 
+
 conn = st.connection('mysql', type='sql')
 try:
 
@@ -7,15 +8,14 @@ try:
     db_name = st.text_input("enter database name ")
     if st.button("Create Database"):
         sql = "create database " +db_name
-        conn.execute(sql)
+        conn._instance.execute(sql)
         st.write("database created")
 
 except Exception as e:
 	st.write("issue ", e)
-finally:
-	if conn is not None:
-		conn.close()
-print("will analysis with sql")
+
+st.write("python with sql anlysis")
+
 
 st.write("python with sql anlysis")
 
