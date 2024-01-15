@@ -1,5 +1,5 @@
 import streamlit as st
-conn = st.sql('mysql'')
+conn = st.connection('mysql')
 try:
 
     st.write(conn)
