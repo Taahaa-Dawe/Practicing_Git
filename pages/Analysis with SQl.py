@@ -1,3 +1,6 @@
+pip install sqlalchemy
+pip install mysql-connector-python
+
 import streamlit as st
 from mysql.connector import * 
 
@@ -16,6 +19,4 @@ except Exception as e:
 
 st.write("python with sql anlysis")
 
-
-st.write("python with sql anlysis")
 
