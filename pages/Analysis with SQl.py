@@ -1,16 +1,13 @@
 import streamlit as st
-from mysql.connector import * 
-from pages.Sql.mysqlpassword import con
-
+conn = st.connection('mysql', type='sql')
 try:
 
-    st.write(con)
-    cursor  = con.cursor()
+    st.write(conn)
     db_name = st.text_input("enter database name ")
     if st.button("Create Database"):
         sql = "create database " +db_name
-        cursor.execute(sql)
-    st.write("database created")
+        conn.execute(sql)
+	st.write("database created")
 
 except Exception as e:
 	st.write("issue ", e)
