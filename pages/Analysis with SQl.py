@@ -1,5 +1,4 @@
 import streamlit as st
-from mysql.connector import * 
 conn = st.connection('mysql', type='sql')
 try:
 
@@ -13,8 +12,8 @@ try:
 except Exception as e:
 	st.write("issue ", e)
 finally:
-	if con is not None:
-		con.close()
+	if conn is not None:
+		conn.close()
 print("will analysis with sql")
 
 st.write("python with sql anlysis")
