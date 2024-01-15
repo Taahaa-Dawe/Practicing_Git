@@ -1,3 +1,4 @@
+pip install sqlalchemy
 import streamlit as st
 conn = st.connection('mysql', type='sql')
 try:
