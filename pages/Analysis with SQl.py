@@ -7,7 +7,7 @@ try:
     if st.button("Create Database"):
         sql = "create database " +db_name
         conn.execute(sql)
-	st.write("database created")
+        st.write("database created")
 
 except Exception as e:
 	st.write("issue ", e)
