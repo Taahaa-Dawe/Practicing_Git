@@ -19,5 +19,5 @@ except Exception as e:
     st.write("Issue: ", e)
 
 st.write("Python with SQL analysis")
-')
+
 
